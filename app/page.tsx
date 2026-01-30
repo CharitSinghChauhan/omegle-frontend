@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Page() {
   
+  console.log("backend: ", process.env.NEXT_PUBLIC_EXPRESS_BACKEND_URL);
+  
   return (
     <div>
       <Dialog>

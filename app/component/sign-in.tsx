@@ -38,7 +38,7 @@ export default function SignInComponent() {
               onClick={async () => {
                 await signIn.social({
                   provider: "google",
-                  callbackURL: "http://localhost:3000/waiting",
+                  callbackURL: `${process.env.NEXT_PUBLIC_FRONTEND_URL}/waiting`,
                   fetchOptions: {
                     onRequest: () => {
                       setLoading(true);
